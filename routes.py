@@ -25,6 +25,10 @@ def template():
 def about():
     return render_template("about.html")
 
+@app.route('/sitemap.xml')
+def sitemap():
+    return render_template("sitemap.xml")
+
 if __name__ == '__main__':
     app.static_folder = 'static'
     app.run(host="0.0.0.0")
