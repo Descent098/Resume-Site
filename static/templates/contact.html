@@ -1,24 +1,15 @@
 {% extends "template.html" %}
 {% block content %}
-    <main class="page contact-me-page">
-        <section class="portfolio-block contact-me">
-            <div class="container">
-                <div class="heading">
-                    <h2>Contact Me</h2>
-                </div>
-                <form>
-                    <div class="form-group"><label for="subject">Subject</label><select class="form-control" id="subject"><option value="" selected="">Choose Subject</option><option value="1">Subject 1</option><option value="2">Subject 2</option><option value="3">Subject 3</option></select></div>
-                    <div
-                        class="form-group"><label for="email">Email</label><input class="form-control" type="email" id="email"></div>
-            <div class="form-group"><label for="message">Message</label><textarea class="form-control" id="message"></textarea></div>
-            <div class="form-group">
-                <div class="form-row">
-                    <div class="col-md-6"><label for="contact-date">Start Date</label><input class="form-control datepicker" type="text" id="contact-date" date-format="MM-DD-YYYY"></div>
-                    <div class="col-md-6 button"><button class="btn btn-primary btn-block" type="button">Contact Me</button></div>
-                </div>
-            </div>
-            </form>
-            </div>
-        </section>
-    </main>
+    <main class="page hire-me-page"></main>
+    <div class="bg-white contact-clean">
+        <h2 class="text-center">Get in Contact</h2>
+        <form data-bss-recipient="2642499f7568704b8d0148d5dc55d728" data-bss-subject="Resume Site Contact form">
+            <div class="form-group"><input class="form-control" type="text" name="name" required="" placeholder="Name"></div>
+            <div class="form-group"><select class="form-control" required=""><option value="12" selected="">Webapp/ Website Development</option><option value="14">Documentation</option><option value="13">Other</option></select></div>
+            <div class="form-group"><input class="form-control is-invalid" type="email" name="email" required="" placeholder="Email"><small class="form-text text-danger">Please enter a correct email address.</small></div>
+            <div class="form-group"><textarea class="form-control" rows="14" name="message" required="" placeholder="Message"></textarea></div>
+            <div class="form-group text-center"><button class="btn btn-primary btn-lg" type="submit">send </button></div>
+        </form>
+    </div>
+
 {% endblock %}
