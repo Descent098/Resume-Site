@@ -1,5 +1,5 @@
 from flask import Flask,redirect, render_template,url_for
-app = Flask(__name__)
+app = Flask(__name__, template_folder='static/templates')
 
 @app.route('/')
 def home():
@@ -26,5 +26,5 @@ def about():
     return render_template("about.html")
 
 if __name__ == '__main__':
-    app.run(host="0.0.0.0")
     app.static_folder = 'static'
+    app.run(host="0.0.0.0")
