@@ -11,6 +11,8 @@
 
       gtag('config', 'UA-135199948-1');
     </script>
+    
+    <!-- Manifest and Metadata-->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Kieran Wood</title>
@@ -22,19 +24,30 @@
     <meta property="og:image" content="/static/img/Resume%20Site.png">
     <meta name="twitter:title" content="Kieran Wood">
     <meta name="theme-color" content="#0ea0ff">
-    <link rel="icon" type="image/png" sizes="660x320" href="/static/img/Resume%20Site.png">
-    <link rel="icon" type="image/png" sizes="660x320" href="/static/img/Resume%20Site.png">
-    <link rel="icon" type="image/png" sizes="660x320" href="/static/img/Resume%20Site.png">
-    <link rel="icon" type="image/png" sizes="660x320" href="/static/img/Resume%20Site.png">
-    <link rel="icon" type="image/png" sizes="660x320" href="/static/img/Resume%20Site.png">
     <link rel="manifest" href="/static/manifest.json">
-    <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap/css/bootstrap.min.css') }}" >
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/untitled.css') }}" >
+    
+    <!-- Icons -->
+    <link rel="icon" type="image/png" sizes="660x320" href="/static/img/Resume%20Site.png">
+    <link rel="icon" type="image/png" sizes="660x320" href="/static/img/Resume%20Site.png">
+    <link rel="icon" type="image/png" sizes="660x320" href="/static/img/Resume%20Site.png">
+    <link rel="icon" type="image/png" sizes="660x320" href="/static/img/Resume%20Site.png">
+    <link rel="icon" type="image/png" sizes="660x320" href="/static/img/Resume%20Site.png">
+    
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kaushan+Script">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/Contact-Form-Clean.css') }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/css/pikaday.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Actor">
+    
+    <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap/css/bootstrap.min.css') }}" >
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/Main.css') }}" >
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/Contact-Form-Clean.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/login-full-page-bs4.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/Testimonials.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/Profile-Card.css') }}">
+    
+    
 </head>
 
 <body>
@@ -56,11 +69,10 @@
     
     
     <!-- Page Content -->
-    <div class="container">
+
         {% block content %}
         {% endblock %}
-    </div>
-    
+
     
     
     <!-- Footer -->
@@ -70,17 +82,21 @@
             <div class="social-icons"><a href="//youtube.com/descent098"><i class="icon ion-social-youtube"></i></a><a href="//github.com/Descent098"><i class="icon ion-social-github"></i></a><a href="//linkedin.com/in/kieran-wood"><i class="icon ion-social-linkedin"></i></a></div>
         </div>
     </footer>
+    
+    <!-- Javascript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/pikaday.min.js"></script>
-    <script src="static/js/theme.js"></script>
-    <script src="static/js/smart-forms.min.js"></script>
+    <script src="/static/js/smart-forms.min.js"></script>
+    <script src="/static/js/login-full-page-bs4.js"></script>
+    <script src="/static/js/login-full-page-bs4-1.js"></script>
+    <script src="/static/js/theme.js"></script>
     
 </body>
 
     
     
-<!--  
+<!--
   _________    ___.                       ._____.               
  /   _____/__ _\_ |__   ______ ___________|__\_ |__   ____      
  \_____  \|  |  \ __ \ /  ___// ___\_  __ \  || __ \_/ __ \     

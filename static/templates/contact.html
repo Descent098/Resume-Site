@@ -1,15 +1,18 @@
 {% extends "template.html" %}
 {% block content %}
 <main class="page hire-me-page"></main>
-    <div class="bg-white contact-clean" style="background-color: #f0f0f0;">
-        <form class="text-body" data-bss-recipient="2642499f7568704b8d0148d5dc55d728" data-bss-subject="Form Submission">
-            <h2 class="text-center">Contact Me</h2>
-            <div class="form-group"><input class="form-control" type="text" name="name" required="" placeholder="Name" minlength="3"></div>
-            <div class="form-group"><select class="border rounded form-control" required=""><option value="12" selected="">Webapp/ Website Development</option><option value="14">Documentation</option><option value="13">Other</option></select></div>
-            <div class="form-group"><input class="form-control" type="email" name="email" required="" placeholder="Email" minlength="6"></div>
-            <div class="form-group"><textarea class="form-control" rows="14" name="message" required="" placeholder="Message" minlength="10"></textarea></div>
-            <div class="form-group text-center"><button class="btn btn-primary" type="submit">send </button></div>
-        </form>
+    <div class="contact-clean" style="background-color: rgb(255,255,255);">
+        <form data-bss-recipient="2642499f7568704b8d0148d5dc55d728" data-bss-subject="Submission from kieranwood.ca">
+            <h2 class="text-center">Get in touch</h2>
+            <div class="form-group"><label>Your Name</label><input class="form-control" type="text" name="name" required="" placeholder="John Doe"></div>
+            <div class="form-group"><label>Phone Number (optional)</label><input class="form-control" type="tel" name="phone number" placeholder="+1 (123) 123-1234" minlength="4"></div>
+            <div class="form-group"><label>Subject</label><select class="custom-select" name="Subject" value="Subject" required=""><option value="12" selected="">Webapp/ Website Development</option><option value="14">Documentation</option><option value="13">Other</option></select></div>
+            <div
+                class="form-group"><label>Email</label><input class="form-control" type="email" name="Email" required="" placeholder="john.doe@example.com" minlength="4"></div>
+    <div class="form-group"><label>Attachment(s)</label><input type="file" name="Attachments" multiple=""></div>
+    <div class="form-group"><label>Message</label><textarea class="form-control" rows="14" name="message" required="" placeholder="Message"></textarea></div>
+    <div class="form-group text-center"><button class="btn btn-primary" type="submit">send </button></div>
+    </form>
     </div>
 
 {% endblock %}

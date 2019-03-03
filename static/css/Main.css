@@ -1,0 +1,54 @@
+.gradient {
+  background: linear-gradient(120deg,#141414,#303030);
+  color: #fff;
+}
+
+.page-footer {
+  padding-top: 35px;
+  border-top: 1px solid #141414;
+  text-align: center;
+  padding-bottom: 20px;
+  background-color: #141414;
+}
+
+.page-footer a {
+  margin: 0 10px;
+  color: #f0f0f0;
+  font-size: 18px;
+}
+
+.page-footer .social-icons a {
+  font-size: 18px;
+  margin: 0 3px;
+  color: #0ea0ff;
+  border: 1px solid;
+  opacity: 1;
+  border-radius: 50%;
+  width: 36px;
+  display: inline-block;
+  height: 36px;
+  text-align: center;
+  background-color: #f0f0f0;
+  line-height: 34px;
+}
+
+.navbar-dark .navbar-toggler {
+  color: #fff;
+  border-color: #0ea0ff;
+}
+
+.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
+  color: #0ea0ff;
+}
+
+.portfolio-block.skills {
+  border-bottom: 0px solid #ddd;
+}
+
+@media (min-width:768px) {
+  .portfolio-block {
+    padding-bottom: 5px;
+    padding-top: 100px;
+  }
+}
+
