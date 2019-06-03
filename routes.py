@@ -1,4 +1,5 @@
 from flask import Flask,redirect, render_template,url_for
+import os
 app = Flask(__name__, template_folder='static/templates')
 
 @app.route('/')
