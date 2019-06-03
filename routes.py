@@ -31,4 +31,4 @@ def sitemap():
 
 if __name__ == '__main__':
     app.static_folder = 'static'
-    app.run(host="0.0.0.0")
+    app.run(port=33507)
