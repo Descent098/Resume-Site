@@ -33,4 +33,4 @@ def sitemap():
 if __name__ == '__main__':
     app.static_folder = 'static'
     env_port = int(os.environ.get('PORT', 5000)) # Grabs port from environment variables, else sets to 5000
-    app.run(port=env_port)
+    app.run(host="0.0.0.0", port=env_port)
