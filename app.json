@@ -1,0 +1,7 @@
+{
+	  "name": "Resume Site",
+	    "description": "My Resume site",
+	      "repository": "https://github.com/Descent098/Resume-Site",
+	          "keywords": ["flask", "python", "static"]
+	          }
+}
