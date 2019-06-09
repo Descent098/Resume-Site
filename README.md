@@ -1,5 +1,5 @@
 # Resume-Site
-My Personal Resume Site
+My Personal Resume Site, written in flask and deployed to Heroku.
 
 # TODO
 1. write copy for about me section
