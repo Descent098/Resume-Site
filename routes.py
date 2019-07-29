@@ -30,6 +30,10 @@ def about():
 def sitemap():
     return render_template("sitemap.xml")
 
+@app.errorhandler(404)
+def page_not_found(e):
+    return render_template("404.html"),404
+
 if __name__ == '__main__':
     app.static_folder = 'static'
     env_port = int(os.environ.get('PORT', 5000)) # Grabs port from environment variables, else sets to 5000

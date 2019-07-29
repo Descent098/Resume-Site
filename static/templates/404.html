@@ -1,0 +1,28 @@
+{% extends "template.html" %}
+
+{% block title %} Projects {% endblock %}
+{% block stylesheets %}
+<style>
+.parent {
+  position: relative;
+  padding-top: 25%;
+}
+ 
+.inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  
+  transform: translate(-50%, -50%);
+}
+</style>
+{% endblock stylesheets %}
+{% block content %}
+<main style="min-height:800px;background-color:#2067b2;" class="page projects-page">
+    <div class="parent">
+        <div class="inner">
+            <img src="/static/img/oopsiewoopsie.png" alt="OOPSIE WOOPSIE!! Uwu We made a fucky wucky!! A wittle fucko boingo! The code monkeys at our headquarters are working VEWY HAWD to fix this!" height="550" width="900"></img>
+        </div>
+    </div>
+</main>
+{% endblock %}
