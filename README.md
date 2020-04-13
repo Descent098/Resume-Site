@@ -1,5 +1,7 @@
 # Resume-Site
-My Personal Resume Site, written in flask and deployed to Heroku.
+My Old Personal Resume Site, written in flask and deployed to Heroku.
+
+This repo exists only for posterity so that anyone interested in how I made my first attempt at a resume site can take a look.
 
 ## Usage
 
